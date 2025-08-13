@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1755091612912,
+      "tag": "0000_groovy_firebird",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1755091849121,
+      "tag": "0001_regular_mesmero",
+      "breakpoints": true
+    }
+  ]
+}
