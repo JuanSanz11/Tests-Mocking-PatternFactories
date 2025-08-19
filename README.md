@@ -1,4 +1,4 @@
-# SchooL API - TESTing Back-End
+# 📚 SchooL API - TESTing Back-End
 
 School API es un proyecto backend educativo construido con TypeScript, Drizzle ORM, Vitest y PostgreSQL. Incluye pruebas automatizadas, paginación eficiente, mocking, factories y cobertura de código.
 
@@ -7,7 +7,7 @@ School API es un proyecto backend educativo construido con TypeScript, Drizzle O
 
 ------------------------------------------------------------
 
-## Instalación de Herramientas
+## 🚀 Instalación de Herramientas
 ```
 npm install
 npm i vitest -D
@@ -18,7 +18,7 @@ npm i -D @vitest/coverage-v8
 ```
 ------------------------------------------------------------
 
-## Pruebas automatizadas
+## 🧪 Pruebas automatizadas
 
 Ejecutar todas las pruebas:
 ```
@@ -34,7 +34,7 @@ open coverage/index.html
 
 ------------------------------------------------------------
 
-## Tipos de pruebas
+## 🧬 Tipos de pruebas
 
 - Unitarias: verifican funciones aisladas
 - Integración: prueban la interacción entre módulos
@@ -44,7 +44,7 @@ E2E = prueba de punta a punta, incluyendo todas las capas. Son más pesadas pero
 
 ------------------------------------------------------------
 
-## Mocking y Pattern Factories
+## 🧪 Mocking y Pattern Factories
 
 - Mocking: simula comportamientos reales sin depender de servicios externos
 - Factories: generan datos ficticios para pruebas
@@ -55,7 +55,7 @@ npm i @faker-js/faker -D
 ```
 ------------------------------------------------------------
 
-## Paginación
+## 🌐 Paginación
 
 Offset-based pagination:
 
@@ -67,7 +67,7 @@ SELECT * FROM courses WHERE id > 'last_id' LIMIT 10;
 
 ------------------------------------------------------------
 
-## Comparación de herramientas de testing
+## 🧪 Comparación de herramientas de testing
 
 Herramienta   | Velocidad   | Ideal para
 --------------|-------------|-------------------------------
@@ -76,7 +76,7 @@ Vitest        | Más rápida  | Desarrollo moderno con TypeScript
 
 ------------------------------------------------------------
 
-## Scripts útiles
+## 📦 Scripts útiles
 ```
 "scripts": {
   "dev": "tsx watch --env-file .env src/server.ts",
@@ -90,7 +90,7 @@ Vitest        | Más rápida  | Desarrollo moderno con TypeScript
 ```
 ------------------------------------------------------------
 
-## Variables de entorno
+## 🛠️ Variables de entorno
 
 Usamos dotenv-cli para cargar variables:
 ```
@@ -102,7 +102,7 @@ dotenv -e .env.test drizzle-kit migrate
 
 ------------------------------------------------------------
 
-## Recursos recomendados
+## 📚 Recursos recomendados
 
 - Supertest en npm: https://www.npmjs.com/package/supertest
 - Vitest: https://vitest.dev
@@ -111,12 +111,12 @@ dotenv -e .env.test drizzle-kit migrate
 
 ------------------------------------------------------------
 
-## Contribuciones
+## 🧠 Contribuciones
 
 Puedes abrir issues, enviar pull requests o sugerencias.
 
 ------------------------------------------------------------
 
-## Licencia
+## 📚 Licencia
 
 Este proyecto es FreeSource
