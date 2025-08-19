@@ -1,4 +1,4 @@
-# Sch00l API - TESTing Back-End
+# SchooL API - TESTing Back-End
 
 School API es un proyecto backend educativo construido con TypeScript, Drizzle ORM, Vitest y PostgreSQL. Incluye pruebas automatizadas, paginación eficiente, mocking, factories y cobertura de código.
 
