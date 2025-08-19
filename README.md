@@ -2,6 +2,9 @@
 
 School API es un proyecto backend educativo construido con TypeScript, Drizzle ORM, Vitest y PostgreSQL. Incluye pruebas automatizadas, paginación eficiente, mocking, factories y cobertura de código.
 
+<img width="1606" height="842" alt="Testing" src="https://github.com/user-attachments/assets/263b0e08-9b0b-45c8-a145-0f2092416e93" />
+
+
 ------------------------------------------------------------
 
 ## Instalación
