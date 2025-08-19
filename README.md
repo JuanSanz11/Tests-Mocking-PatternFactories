@@ -7,21 +7,17 @@ School API es un proyecto backend educativo construido con TypeScript, Drizzle O
 
 ------------------------------------------------------------
 
-## Instalación
+## Instalación de Herramientas
 
 npm install
-
-------------------------------------------------------------
-
-## Pruebas automatizadas
-
-Instalación de herramientas:
-
 npm i vitest -D
 npm i supertest -D
 npm i @types/supertest -D
 npm i dotenv-cli -D
 npm i -D @vitest/coverage-v8
+------------------------------------------------------------
+
+## Pruebas automatizadas
 
 Ejecutar todas las pruebas:
 
@@ -80,7 +76,7 @@ Vitest        | Más rápida  | Desarrollo moderno con TypeScript
 ------------------------------------------------------------
 
 ## Scripts útiles
-
+```
 "scripts": {
   "dev": "tsx watch --env-file .env src/server.ts",
   "db:seed": "tsx --env-file .env src/database/seed.ts",
@@ -90,7 +86,7 @@ Vitest        | Más rápida  | Desarrollo moderno con TypeScript
   "pretest": "dotenv -e .env.test drizzle-kit migrate",
   "test": "dotenv -e .env.test vitest run"
 }
-
+```
 ------------------------------------------------------------
 
 ## Variables de entorno
