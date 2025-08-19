@@ -15,6 +15,34 @@
       "when": 1755091849121,
       "tag": "0001_regular_mesmero",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755204367282,
+      "tag": "0002_charming_skrulls",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755204489706,
+      "tag": "0003_lush_darkstar",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755617444511,
+      "tag": "0004_noisy_ezekiel",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1755618829161,
+      "tag": "0005_medical_switch",
+      "breakpoints": true
     }
   ]
 }

@@ -1,20 +1,28 @@
+### Crear Curso
+
 POST http://localhost:3333/courses
 Content-Type: application/json
 
 {
-"title": "Cur"
+"title": "Curso de MongoDB"
 }
 
-###
+### Todos los Cursos
 
 GET http://localhost:3333/courses
 
+### Busca cursos con palabra o ordena por titulo y paginación
 
-###
+//GET http://localhost:3333/courses?search=title
+GET http://localhost:3333/courses?orderBy=title
+//GET http://localhost:3333/courses?orderBy=title&page=3
+
+
+### Curso com ID
 
 GET http://localhost:3333/courses/fdf5958b-baf4-43cf-9d57-4c9ca4746f0f
 
 
-###
+### Delete
 
-DELETE http://localhost:3333/courses/3b913b2f-3727-424f-9958-e1b4d8cefc8c
+DELETE http://localhost:3333/courses/98e511b9-e0f9-42c6-8dc9-10abaa61d2ee

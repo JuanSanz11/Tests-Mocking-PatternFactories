@@ -1,70 +1,90 @@
-# 🚀 API server - Banco de datos - Documentación
+# 📚 School API
 
-API construida con **Fastify**, **Drizzle ORM**, **PostgreSQL**, utilizando contenedores Docker y documentación interactiva con **Swagger UI** y **Scalar**.
-
----
-
-## 📦 Tecnologías y Conceptos
-
-### 🧱 Bases de Datos
-
-- **PostgreSQL** – Base relacional, utilizada para lecturas
-- **Redis** – Cache y datos temporales
-- **ScyllaDB / Cassandra** – Alta performance para datos sobrecargados
+Proyecto backend educativo construido con TypeScript, Drizzle ORM, Vitest y PostgreSQL. Incluye pruebas automatizadas, paginación, mocking, y cobertura de código.
 
 ---
 
-### 🐳 Docker
-
-Utilizado para aislar y ejecutar servicios en contenedores.
-
-Docker (Maquina virtual CPU/Memoria rapida: rueda un sistema operacional dentro de otro sistema operacional, funciona mas o menos de la misma forma). Reaprovecha todo el sistema de la maquina que lo hospeda. Ex: postgres:17 - redis:10 - Scylladb: 12
-
-### Referencias: Docker Hub
-
+## 🚀 Instalación
 
 ```bash
-docker compose up -d       # Inicia los contenedores en segundo plano
-docker-compose stop        # Detiene los contenedores
-docker ps                  # Lista contenedores activos
-```
+npm install
+🧪 Pruebas automatizadas
+Instalación de herramientas:
 
----
+bash
+npm i vitest -D
+npm i supertest -D
+npm i @types/supertest -D
+npm i dotenv-cli -D
+npm i -D @vitest/coverage-v8
+Ejecutar pruebas unitarias, de integración y E2E:
+bash
+npm run test
+También puedes ejecutar pruebas específicas:
 
-### 🧭 Swagger UI - Swagger UI -  Scalar
+bash
+npm run test src/routes/get-courses.test.ts
+Cobertura de código
+bash
+open coverage/index.html
+🧬 Tipos de pruebas
+Unitarias: testean funciones aisladas
 
-API cuenta con documentación interactiva para explorar endpoints, probar rutas y visualizar esquemas de datos.
+Integración: testean la interacción entre módulos
 
----
+E2E (End to End): simulan el comportamiento real de la app en producción
 
-### 🧬 Comandos Drizzle ORM
+E2E = prueba de punta a punta, incluyendo todas las capas. Son más pesadas pero más representativas.
 
-### 📝 Flujo recomendado
+🧪 Mocking y Pattern Factories
+Mocking: simula comportamientos reales sin depender de servicios externos
 
-1. Modifica tu esquema (por ejemplo, agrega una nueva tabla o columna)
-2. Ejecuta `npx drizzle-kit generate`
-3. Ejecuta `npx drizzle-kit migrate`
-4. (Opcional) Ejecuta `npx drizzle-kit studio` para visualizar los cambios
+Factories: generan datos ficticios para pruebas
 
----
+Biblioteca recomendada:
 
-### Instalación:
+bash
+npm i @faker-js/faker -D
+🌐 Paginación
+Offset-based pagination
+Pagina usando LIMIT y OFFSET. Es simple pero puede volverse lenta en grandes volúmenes de datos.
 
-```bash
-npm i @fastify/swagger @fastify/swagger-ui
-npm i drizzle-orm pg   
-npm i drizzle-kit -D
+sql
+SELECT * FROM courses LIMIT 10 OFFSET 20;
+Cursor-based pagination
+Usa un cursor (como un ID o timestamp) para paginar. Es más eficiente y escalable.
 
-npm i zod fastify-type-provider-zod
-npm i @fastify/swagger 
+sql
+SELECT * FROM courses WHERE id > 'last_id' LIMIT 10;
+🧪 Comparación de herramientas de testing
+Herramienta	Velocidad	Ideal para
+Jest	Más lenta	Proyectos grandes con mocks complejos
+Vitest	Más rápida	Desarrollo moderno con TypeScript
+📦 Scripts útiles
+json
+"scripts": {
+  "dev": "tsx watch --env-file .env src/server.ts",
+  "db:seed": "tsx --env-file .env src/database/seed.ts",
+  "db:generate": "drizzle-kit generate",
+  "db:migrate": "drizzle-kit migrate",
+  "db:studio": "drizzle-kit studio",
+  "pretest": "dotenv -e .env.test drizzle-kit migrate",
+  "test": "dotenv -e .env.test vitest run"
+}
+🛠️ Variables de entorno
+Usamos dotenv-cli para cargar variables:
 
-npm i @fastify/swagger-ui
-http://localhost:3333/docs
+bash
+npm i dotenv-cli -D
+Ejemplo de uso:
 
-npm i @scalar/fastify-api-reference
-http://localhost:3333/docs/
-````
+bash
+dotenv -e .env.test drizzle-kit migrate
+📚 Recursos
+Supertest en npm
 
+Vitest
 
+Drizzle ORM
 
-
+Faker.js
