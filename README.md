@@ -18,6 +18,21 @@ npm i -D @vitest/coverage-v8
 ```
 ------------------------------------------------------------
 
+# 🧪 Postico 2
+
+Postico 2 es una aplicación nativa para macOS diseñada específicamente para trabajar con bases de datos PostgreSQL y compatibles como Amazon Redshift, CockroachDB y Greenplum.
+
+Ideal para desarrolladores, analistas, investigadores y estudiantes que buscan una interfaz gráfica intuitiva para gestionar sus bases de datos.
+
+### Características principales
+
+- **Consultar y editar datos** directamente en las tablas
+- **Ejecutar queries SQL** con un editor moderno y soporte para múltiples archivos
+- **Modificar estructuras de tablas** con un editor visual (columnas, índices, constraints)
+- **Editar funciones y procedimientos almacenados**
+- **Organizar conexiones** a múltiples servidores, con sincronización vía iCloud o Dropbox
+------------------------------------------------------------
+
 ## 🧪 Pruebas automatizadas
 
 Ejecutar todas las pruebas:
